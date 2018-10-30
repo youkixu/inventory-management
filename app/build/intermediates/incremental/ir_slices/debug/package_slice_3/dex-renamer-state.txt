@@ -1,0 +1,4 @@
+#Tue Oct 30 15:30:28 AEDT 2018
+base.0=C\:\\Users\\Youki\\Dropbox\\Uni\\2018\\Software Development for Mobile Devices\\Project\\App\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+path.0=classes.dex
+renamed.0=classes.dex

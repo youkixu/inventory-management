@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">iTracker</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnCancel">CANCEL</string>
+    <string name="btnAdd">ADD</string>
+    <string name="hint_product_name">Product Name</string>
+    <string name="hint_product_id">Product ID</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_sell_price">Sell Price</string>
+    <string name="hint_buy_price">Buy Price</string>
+    <string name="hint_notes">Notes(optional)</string>
+    <string name="hint_price">Price</string>
+    <string name="btnUpload">Upload Image</string>
+    <string name="nav_home">HOME</string>
+    <string name="nav_item_list">ITEMS</string>
+    <string name="nav_order_list">ORDERS</string>
+    <string name="nav_graphs">GRAPHS</string>
+    <string name="nav_options">OPTIONS</string>
+
+    <string name="order_card_quantity">Quantity: %1$d</string>
+    <string name="order_card_value">Value: %1$.02f</string>
+    <string name="placeholder_zero">0</string>
+
+    <string-array name="test_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>

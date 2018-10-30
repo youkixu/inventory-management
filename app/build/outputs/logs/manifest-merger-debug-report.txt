@@ -1,0 +1,214 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [:spinerdialognew] C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\spinerdialognew\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b1e11c561e8ff1ff5fc41b15e77ee9d1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\c501f2ee440a5d327990ff9ac286c477\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a93c38c3d7862dc7a381b42fd7a01fa9\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\803bc5248a489a069581975a913ea11e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\60cf14d014ecfbdeaf12e5b750bd470f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.travijuu:numberpicker:1.0.7] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\numberpicker-1.0.7.aar\843e9829db9a3346084e06572291ab37\AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a620426ae58e3a708746e74218cf5a2f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\35649aaac483d5561796a1395da3a8e8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\cf28840dd022b6d7924bd0f4ac5073a5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\175db94a1ab09fa671b3c56247b68ea1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\3804c4f4c5b6cb59752e6b7190721f08\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\1996672d800fb11a152bd7a59755edcd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\eafbf59de812947e74925dcd387af335\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\313b52f1053abcdf1829720e7e66e5e6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\c8b6f217e567bdb4cfe6bcdeeb1d0000\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\d2300405e97622de46b22164a86fd7a9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\926fe2e5823877688c076e7b05a82c73\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\ddc73574f2d1f34bc411f05ff4af91f0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\77b4beebf94722ebed89f8150517ac09\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\38633a4568c6afd6e360bbec68612f24\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e7dfb62ce877900cc3f7be750d3dad20\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\a6683bb21f9b6596e2c7e285450ab979\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\aaf77c29aa73423e77e2029a5f52b97d\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\77e9fa0d3bf2814ef223570b407e705b\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\eb2ff4726a67094971176aaafaf04c1e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\7a88492b1a8b6e9df6d7a9111e98c34d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\12f955d6212d039420eab6f8c4ed0832\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9e00673711683ece8430cf7c15a1612e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\b4f148bb4c7bdc841cafd862992c9ffd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\9c2b94f9d07b89f4fbc00df96d32d1d2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\61b2d9893101370f6aaad939b1248c6d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\7405abb740906f2b46c7e35580262b26\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c017bae64edd2627a86b6d0f0b854124\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\12266deb78366a74fc8a3e5e55f85dd2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0ead0af0842f68152f4c262785d41162\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:6:22-78
+application
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:8:5-24:19
+MERGED from [:spinerdialognew] C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\spinerdialognew\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-15:19
+MERGED from [:spinerdialognew] C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\spinerdialognew\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b1e11c561e8ff1ff5fc41b15e77ee9d1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b1e11c561e8ff1ff5fc41b15e77ee9d1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a93c38c3d7862dc7a381b42fd7a01fa9\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a93c38c3d7862dc7a381b42fd7a01fa9\AndroidManifest.xml:9:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:7:5-12:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\aaf77c29aa73423e77e2029a5f52b97d\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\aaf77c29aa73423e77e2029a5f52b97d\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\77e9fa0d3bf2814ef223570b407e705b\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\77e9fa0d3bf2814ef223570b407e705b\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\aaf77c29aa73423e77e2029a5f52b97d\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.yx.itracker.MainActivity
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.yx.itracker.AddItemActivity
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:22:9-53
+	android:name
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:22:19-50
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:26:5-75
+	android:name
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml:26:22-72
+uses-sdk
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+MERGED from [:spinerdialognew] C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\spinerdialognew\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:spinerdialognew] C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\spinerdialognew\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b1e11c561e8ff1ff5fc41b15e77ee9d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b1e11c561e8ff1ff5fc41b15e77ee9d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\c501f2ee440a5d327990ff9ac286c477\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\c501f2ee440a5d327990ff9ac286c477\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a93c38c3d7862dc7a381b42fd7a01fa9\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a93c38c3d7862dc7a381b42fd7a01fa9\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\803bc5248a489a069581975a913ea11e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\803bc5248a489a069581975a913ea11e\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\60cf14d014ecfbdeaf12e5b750bd470f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\60cf14d014ecfbdeaf12e5b750bd470f\AndroidManifest.xml:20:5-44
+MERGED from [com.github.travijuu:numberpicker:1.0.7] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\numberpicker-1.0.7.aar\843e9829db9a3346084e06572291ab37\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.travijuu:numberpicker:1.0.7] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\numberpicker-1.0.7.aar\843e9829db9a3346084e06572291ab37\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a620426ae58e3a708746e74218cf5a2f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a620426ae58e3a708746e74218cf5a2f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\35649aaac483d5561796a1395da3a8e8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\35649aaac483d5561796a1395da3a8e8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\cf28840dd022b6d7924bd0f4ac5073a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\cf28840dd022b6d7924bd0f4ac5073a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\175db94a1ab09fa671b3c56247b68ea1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\175db94a1ab09fa671b3c56247b68ea1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\3804c4f4c5b6cb59752e6b7190721f08\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\3804c4f4c5b6cb59752e6b7190721f08\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\1996672d800fb11a152bd7a59755edcd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\1996672d800fb11a152bd7a59755edcd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\eafbf59de812947e74925dcd387af335\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\eafbf59de812947e74925dcd387af335\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\313b52f1053abcdf1829720e7e66e5e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\313b52f1053abcdf1829720e7e66e5e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\c8b6f217e567bdb4cfe6bcdeeb1d0000\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\c8b6f217e567bdb4cfe6bcdeeb1d0000\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\d2300405e97622de46b22164a86fd7a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\d2300405e97622de46b22164a86fd7a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\926fe2e5823877688c076e7b05a82c73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\926fe2e5823877688c076e7b05a82c73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\ddc73574f2d1f34bc411f05ff4af91f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\ddc73574f2d1f34bc411f05ff4af91f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\77b4beebf94722ebed89f8150517ac09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\77b4beebf94722ebed89f8150517ac09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\38633a4568c6afd6e360bbec68612f24\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\38633a4568c6afd6e360bbec68612f24\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e7dfb62ce877900cc3f7be750d3dad20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\e7dfb62ce877900cc3f7be750d3dad20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\a6683bb21f9b6596e2c7e285450ab979\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\a6683bb21f9b6596e2c7e285450ab979\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\aaf77c29aa73423e77e2029a5f52b97d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\aaf77c29aa73423e77e2029a5f52b97d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\77e9fa0d3bf2814ef223570b407e705b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\77e9fa0d3bf2814ef223570b407e705b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\eb2ff4726a67094971176aaafaf04c1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\eb2ff4726a67094971176aaafaf04c1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\7a88492b1a8b6e9df6d7a9111e98c34d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\7a88492b1a8b6e9df6d7a9111e98c34d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\12f955d6212d039420eab6f8c4ed0832\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\12f955d6212d039420eab6f8c4ed0832\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9e00673711683ece8430cf7c15a1612e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9e00673711683ece8430cf7c15a1612e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\b4f148bb4c7bdc841cafd862992c9ffd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\b4f148bb4c7bdc841cafd862992c9ffd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\9c2b94f9d07b89f4fbc00df96d32d1d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\9c2b94f9d07b89f4fbc00df96d32d1d2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\61b2d9893101370f6aaad939b1248c6d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\61b2d9893101370f6aaad939b1248c6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\7405abb740906f2b46c7e35580262b26\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\7405abb740906f2b46c7e35580262b26\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c017bae64edd2627a86b6d0f0b854124\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c017bae64edd2627a86b6d0f0b854124\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\12266deb78366a74fc8a3e5e55f85dd2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\12266deb78366a74fc8a3e5e55f85dd2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0ead0af0842f68152f4c262785d41162\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0ead0af0842f68152f4c262785d41162\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Youki\Dropbox\Uni\2018\Software Development for Mobile Devices\Project\App\app\src\main\AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Youki\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\97b24ffb767a75084eb84806b689d36f\AndroidManifest.xml:9:13-64

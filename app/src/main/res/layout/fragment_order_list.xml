@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OrderListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/mtrl_card_spacing"
+        android:layout_marginRight="@dimen/mtrl_card_spacing"
+        android:layout_marginTop="@dimen/mtrl_card_spacing">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvOrderList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="65dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical">
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_addNewOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/round_add_black_18"
+        android:tint="@color/colorWhite"
+        app:fabCustomSize="40dp" />
+</FrameLayout>
