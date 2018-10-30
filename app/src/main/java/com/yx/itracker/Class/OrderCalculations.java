@@ -4,7 +4,10 @@ import android.util.Log;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class OrderCalculations {
     List<Order> orders;
@@ -64,6 +67,20 @@ public class OrderCalculations {
             sum = sum.add(profit);
         }
         return sum.doubleValue();
+    }
+
+    public HashMap<Float, Float> getTimeProfitMap() {
+        HashMap<Float, Float> map = new HashMap<>();
+
+        BigDecimal sum = new BigDecimal(0).setScale(2, RoundingMode.CEILING);
+        for(Order order : orders) {
+            BigDecimal cost = order.getPrice().subtract(order.getItem().getBuyPrice());
+            BigDecimal profit = cost.multiply(new BigDecimal(order.getQuantity()));
+            sum = sum.add(profit);
+            long timeAdded = TimeUnit.MILLISECONDS.toHours(order.getDateAdded().getTime());
+            map.put(((float) timeAdded), sum.floatValue());
+        }
+        return map;
     }
 }
 

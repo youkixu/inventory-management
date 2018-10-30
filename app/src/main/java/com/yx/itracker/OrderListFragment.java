@@ -20,6 +20,7 @@ import com.yx.itracker.Class.Order;
 import com.yx.itracker.Class.OrderCard;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -72,13 +73,15 @@ public class OrderListFragment extends Fragment implements AddOrderFragment.OnOr
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-//        orderList.add(new Order("Apple", 10, new BigDecimal(12.34), "PURCHASE", new Date()));
-//        List<OrderCard> list = new ArrayList<OrderCard>();
-//        list.add(new OrderCard("Apple", 10, new BigDecimal(12.34), "PURCHASE", new Date()));
-//        list.add(new OrderCard("Apple", 10, new BigDecimal(12.34), "PURCHASE", new Date()));
-//        list.add(new OrderCard("PEAR", 30, new BigDecimal(52.34), "SALE", new Date()));
-//        mListAdapter.updateItemCards(list);
-
+//        //DUMMY DATA
+//        List<String> tempItemImages = new ArrayList<String>();
+//        tempItemImages.add("android.resource://com.yx.itracker/drawable/noimage");
+//        Item itm = new Item(0, new BigInteger("909933"), tempItemImages, "Apple", 20, new BigDecimal(110),new BigDecimal(100), "AA" );
+//        Order o1 = new Order(itm, 5, new BigDecimal(130), "SALE", new Date());
+//        Order o2 = new Order(itm, 2, new BigDecimal(150), "SALE", new Date());
+//        updateOrderList(o1);
+//        updateOrderList(o2);
+//        ///
 
         fm = getActivity().getSupportFragmentManager();
 

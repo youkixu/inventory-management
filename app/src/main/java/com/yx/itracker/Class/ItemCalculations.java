@@ -32,7 +32,7 @@ public class ItemCalculations {
     public int getLowOnStockCount() {
         int total = 0;
         for(Item item : items) {
-            if(item.getQuantity() < 5)
+            if(item.getQuantity() < 5 && item.getQuantity() != 0)
                 total++;
         }
         return total;

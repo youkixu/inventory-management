@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements NewItemFragment.O
     final Fragment fragmentItemList = new ItemListFragment();
     final Fragment fragmentOrderList = new OrderListFragment();
     final Fragment fragmentGraph = new GraphFragment();
+    final Fragment fragmentOptions = new OptionsFragment();
     final FragmentManager fm = getSupportFragmentManager();
     Fragment active = fragmentHome;
 
@@ -98,6 +99,11 @@ public class MainActivity extends AppCompatActivity implements NewItemFragment.O
         }
         itemListFrag.updateItemList(newList);
         updateHomeItemUI(itemMap);
+
+        //Update Graph data
+        GraphFragment fragGraph = (GraphFragment) getSupportFragmentManager().findFragmentByTag("fragmentGraph");
+        fragGraph.updateGraphData(orderList);
+
     }
 
 
@@ -113,6 +119,7 @@ public class MainActivity extends AppCompatActivity implements NewItemFragment.O
         fm.beginTransaction().add(R.id.container, fragmentItemList, "fragmentItemList").addToBackStack(null).hide(fragmentItemList).commit();
         fm.beginTransaction().add(R.id.container, fragmentOrderList, "fragmentOrderList").addToBackStack(null).hide(fragmentOrderList).commit();
         fm.beginTransaction().add(R.id.container, fragmentGraph, "fragmentGraph").addToBackStack(null).hide(fragmentGraph).commit();
+        fm.beginTransaction().add(R.id.container, fragmentOptions, "fragmentOptions").addToBackStack(null).hide(fragmentOptions).commit();
 
         fm.beginTransaction().show(fragmentHome).commit();
 
@@ -158,8 +165,7 @@ public class MainActivity extends AppCompatActivity implements NewItemFragment.O
                                 updateActiveFrag(fragmentGraph);
                                 break;
                             case R.id.nav_settings:
-                                GraphFragment fragGraph = (GraphFragment) getSupportFragmentManager().findFragmentByTag("fragmentGraph");
-                                fragGraph.updateGraphData();
+                                updateActiveFrag(fragmentOptions);
                                 break;
                             default:
                                 break;
@@ -186,6 +192,12 @@ public class MainActivity extends AppCompatActivity implements NewItemFragment.O
                 break;
             case "fragmentAddOrder":
                 setTitle("iTracker - Add New Order");
+                break;
+            case "fragmentGraph":
+                setTitle("iTracker - Graphs");
+                break;
+            case "fragmentOptions":
+                setTitle("iTracker - Options");
                 break;
             default:
                 setTitle("iTracker");

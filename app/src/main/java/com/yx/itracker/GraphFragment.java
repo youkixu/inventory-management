@@ -20,12 +20,15 @@ import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.yx.itracker.Class.Order;
+import com.yx.itracker.Class.OrderCalculations;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 
@@ -34,6 +37,7 @@ public class GraphFragment extends Fragment {
     private List<Entry> entries;
     private LineChart chart;
     private LineDataSet dataSet;
+    private List<Order> mOrderList;
 
     public GraphFragment() { }
 
@@ -42,6 +46,9 @@ public class GraphFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        mOrderList = new ArrayList<Order>();
+
         View view = inflater.inflate(R.layout.fragment_graph, container, false);
         chart = (LineChart) view.findViewById(R.id.chart);
 
@@ -112,24 +119,36 @@ public class GraphFragment extends Fragment {
 
 
     private void setData(int count, float range) {
-
+        OrderCalculations oc = new OrderCalculations(mOrderList);
+        HashMap<Float, Float> orderMap = oc.getTimeProfitMap();
+        Log.d("aabb", "OM:"+ orderMap.toString());
         // now in hours
-        long now = TimeUnit.MILLISECONDS.toHours(System.currentTimeMillis());
+        //long now = TimeUnit.MILLISECONDS.toHours(System.currentTimeMillis());
 
         ArrayList<Entry> values = new ArrayList<>();
 
-        // count = hours
-        float to = now + count;
 
-        // increment by 1 hour
-        for (float x = now; x < to; x++) {
-            float y = getRandom(range, 50);
-            Log.d("aabb", "x:" + Float.toString(x) + "y:" + Float.toString(y));
-            values.add(new Entry(x, y)); // add one entry per hour
+        for (Map.Entry<Float, Float> entry : orderMap.entrySet()) {
+            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+            values.add(new Entry(entry.getKey(), entry.getValue()));
         }
 
+//        values.add(new Entry(428025, 50));
+//        values.add(new Entry(428026, 60));
+//        values.add(new Entry(428027, 70));
+
+        // count = hours
+        //float to = now + count;
+
+        // increment by 1 hour
+//        for (float x = now; x < to; x++) {
+//            float y = getRandom(range, 50);
+//            Log.d("aabb", "x:" + Float.toString(x) + "y:" + Float.toString(y));
+//            values.add(new Entry(x, (float)yVals)); // add one entry per hour
+//        }
+
         // create a dataset and give it a type
-        LineDataSet set1 = new LineDataSet(values, "DataSet 1");
+        LineDataSet set1 = new LineDataSet(values, "DataSet 1!");
         set1.setAxisDependency(YAxis.AxisDependency.LEFT);
         set1.setColor(ColorTemplate.getHoloBlue());
         set1.setValueTextColor(ColorTemplate.getHoloBlue());
@@ -154,7 +173,9 @@ public class GraphFragment extends Fragment {
         return (float) (Math.random() * range) + start;
     }
 
-    public void updateGraphData() {
+    public void updateGraphData(List<Order> orderList) {
+        mOrderList = orderList;
+
         setData(5, 50);
 //        entries.add(new Entry(8,1000));
 //        dataSet.setValues(entries);

@@ -91,14 +91,22 @@ public class ItemListFragment extends Fragment implements AddItemFragment.OnPare
 
         itemList = new ArrayList<Item>();
 
+
+
         ArrayList<ItemCard> itemCardList = new ArrayList<ItemCard>();
+
         mListAdapter = new ItemCardListAdapter(itemCardList);
         mRecyclerView.setAdapter(mListAdapter);
 
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-
+//        ///Dummy Data
+//        List<String> tempItemImages = new ArrayList<String>();
+//        tempItemImages.add("android.resource://com.yx.itracker/drawable/noimage");
+//        itemList.add(new Item(0, new BigInteger("909933"), tempItemImages, "Apple", 20, new BigDecimal(110),new BigDecimal(100), "AA" ));
+//        mListAdapter.updateItemCards(generateItemCards(itemList));
+//        ///
 
         FloatingActionButton fab = view.findViewById(R.id.fab_addNewItem);
         fab.setOnClickListener(new View.OnClickListener() {
