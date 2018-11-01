@@ -23,8 +23,8 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int colorLightGray = 0x7f06002b;
-        public static final int colorPrimary = 0x7f06002c;
+        public static final int colorLightGray = 0x7f060032;
+        public static final int colorPrimary = 0x7f060037;
     }
     public static final class drawable {
         private drawable() {}
@@ -35,9 +35,9 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int decrement = 0x7f090041;
-        public static final int display = 0x7f09004b;
-        public static final int increment = 0x7f090072;
+        public static final int decrement = 0x7f090042;
+        public static final int display = 0x7f09004c;
+        public static final int increment = 0x7f090078;
     }
     public static final class layout {
         private layout() {}

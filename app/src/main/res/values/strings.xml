@@ -12,7 +12,7 @@
     <string name="hint_buy_price">Buy Price</string>
     <string name="hint_notes">Notes(optional)</string>
     <string name="hint_price">Price</string>
-    <string name="btnUpload">Upload Image</string>
+    <string name="btnUpload">Upload Image (Optional)</string>
     <string name="nav_home">HOME</string>
     <string name="nav_item_list">ITEMS</string>
     <string name="nav_order_list">ORDERS</string>

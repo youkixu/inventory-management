@@ -66,7 +66,8 @@
                 android:id="@+id/etQuantity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5" />
+                android:text="5"
+                android:inputType="number"/>
         </android.support.design.widget.TextInputLayout>
 
         <LinearLayout
@@ -86,7 +87,8 @@
                     android:id="@+id/etSellPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="110" />
+                    android:text="110"
+                    android:inputType="numberDecimal"/>
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -100,7 +102,8 @@
                     android:id="@+id/etBuyPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="100" />
+                    android:text="100"
+                    android:inputType="numberDecimal"/>
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
@@ -111,8 +114,7 @@
             android:id="@+id/txtInputLayoutNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_notes"
-            app:helperText="Optional">
+            android:hint="@string/hint_notes">
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/etNotes"
@@ -123,21 +125,26 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="45dp">
 
             <android.support.design.button.MaterialButton
                 android:id="@+id/btnAdd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:text="@string/btnAdd" />
+                android:layout_alignParentBottom="true"
+                android:text="@string/btnAdd"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <android.support.design.button.MaterialButton
                 android:id="@+id/btnCancel"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
                 android:layout_toStartOf="@id/btnAdd"

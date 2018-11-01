@@ -7,7 +7,8 @@
     android:layout_height="70dp"
     android:layout_margin="8dp"
     android:paddingTop="8dp"
-    android:paddingBottom="8dp">
+    android:paddingBottom="8dp"
+    app:cardBackgroundColor="@color/colorLightSlateGray">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,27 +37,16 @@
                 android:background="@android:color/darker_gray"
                 app:layout_constraintTop_toBottomOf="@id/tvOrderCardName"/>
 
-            <TextView
-                android:id="@+id/tvOrderCardTypeLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="0.3"
-                android:text="Type:"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvOrderCardName" />
-
 
             <TextView
                 android:id="@+id/tvOrderCardQuantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="90dp"
+                android:layout_marginStart="100dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:text="Quantity: 1"
-                app:layout_constraintStart_toEndOf="@+id/tvOrderCardTypeLabel"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/vSeperator" />
 
             <TextView
@@ -85,7 +75,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                app:layout_constraintStart_toEndOf="@+id/tvOrderCardTypeLabel"
+                android:text="SALE"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/vSeperator" />
 
 

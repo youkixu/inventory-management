@@ -5,6 +5,18 @@
     <color name="colorAccent">#ff4081</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorReplyBlue">#344955</color>
-
+    <color name="colorDarkSlateBlue">#3e6d85</color>
+    <color name="colorDarkSlateGray">#1F2C3F</color>
+    <color name="colorLightSlateGray">#334053</color>
+    <color name="colorSlateGray">#6F6484</color>
+    <color name="colorLightSteelBlue">#CDCFDB</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorGoldenRod">#E6A23E</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPowderBlue">#F7FBFB</color>
+    <color name="colorLightSkyBlue">#68C3FA</color>
+    <color name="colorSkyBlue">#97CAEF</color>
+    <color name="colorDarkBlue">#2979ff</color>
+    <color name="colorLightBlue">#4C8BFF</color>
 
 </resources>

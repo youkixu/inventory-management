@@ -603,6 +603,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color bnv_tab_item_foreground
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -616,10 +617,23 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorAccent
+color colorBlack
+color colorDarkBlue
+color colorDarkSlateBlue
+color colorDarkSlateGray
+color colorGoldenRod
+color colorLightBlue
 color colorLightGray
+color colorLightSkyBlue
+color colorLightSlateGray
+color colorLightSteelBlue
+color colorPowderBlue
 color colorPrimary
 color colorPrimaryDark
 color colorReplyBlue
+color colorSkyBlue
+color colorSlateGray
+color colorTransparent
 color colorWhite
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
@@ -1083,6 +1097,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gradient_background
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1151,6 +1166,7 @@ id bottom
 id bottom_navigation
 id btnAdd
 id btnCancel
+id btnExportToCsv
 id btnOrderAdd
 id btnOrderCancel
 id btnOrderSelectProduct
@@ -1188,10 +1204,15 @@ id direct
 id disableHome
 id display
 id divider
+id divider10
 id divider2
 id divider3
+id divider4
 id divider5
 id divider6
+id divider7
+id divider8
+id divider9
 id edit_query
 id end
 id end_padder
@@ -1248,7 +1269,6 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id my_toolbar
 id nav_graphs
 id nav_home
 id nav_item_list
@@ -1372,7 +1392,6 @@ id tvOrderCardDate
 id tvOrderCardName
 id tvOrderCardQuantity
 id tvOrderCardType
-id tvOrderCardTypeLabel
 id tvOrderCardValue
 id tvOrderItemName
 id tvOrderItemNameLabel
@@ -1454,7 +1473,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_add_item
 layout activity_main
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1477,6 +1495,7 @@ layout fragment_graph
 layout fragment_home
 layout fragment_item_list
 layout fragment_new_item
+layout fragment_options
 layout fragment_order
 layout fragment_order_list
 layout items_view

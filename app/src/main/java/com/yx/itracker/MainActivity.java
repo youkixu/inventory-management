@@ -112,8 +112,8 @@ public class MainActivity extends AppCompatActivity implements NewItemFragment.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
+        //Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        //setSupportActionBar(myToolbar);
 
         fm.beginTransaction().add(R.id.container,fragmentHome, "fragmentHome").addToBackStack(null).commit();
         fm.beginTransaction().add(R.id.container, fragmentItemList, "fragmentItemList").addToBackStack(null).hide(fragmentItemList).commit();

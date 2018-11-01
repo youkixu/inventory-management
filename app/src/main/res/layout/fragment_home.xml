@@ -18,23 +18,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
             android:text="Today's Sales Activity"
             android:textAlignment="center"
-            android:textSize="22sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:id="@+id/divider"
-            android:layout_width="330dp"
-            android:layout_height="8dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="16dp"
-            android:background="?android:attr/listDivider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/dividerVertical"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="# Items Sold"
             android:textSize="18sp"
@@ -64,7 +62,7 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/divider6"
-            app:layout_constraintTop_toBottomOf="@+id/tvItemsSold" />
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
 
         <TextView
             android:id="@+id/tvItemsSold"
@@ -73,7 +71,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="0"
+            android:text="@string/placeholder_zero"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvItemsSoldLabel"
             app:layout_constraintStart_toStartOf="@+id/tvItemsSoldLabel"
@@ -86,8 +84,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="0"
-            android:textSize="18sp"
+            android:text="@string/placeholder_zero"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvProfitLabel"
             app:layout_constraintStart_toStartOf="@+id/tvProfitLabel"
             app:layout_constraintTop_toBottomOf="@+id/tvProfitLabel" />
@@ -103,7 +101,7 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/divider6"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNumberOfOrders" />
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
 
         <TextView
             android:id="@+id/tvRevenue"
@@ -112,7 +110,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="0"
+            android:text="@string/placeholder_zero"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvRevenueLabel"
             app:layout_constraintStart_toStartOf="@+id/tvRevenueLabel"
@@ -121,8 +119,8 @@
         <View
             android:id="@+id/divider3"
             android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:layout_marginTop="32dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
             android:background="?android:attr/listDivider"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
@@ -134,10 +132,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="Stock Statistics"
-            android:textSize="22sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider3" />
@@ -147,7 +145,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="Total Items"
             android:textSize="18sp"
@@ -160,7 +158,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="Total Quantity"
             android:textSize="18sp"
@@ -170,11 +168,9 @@
 
         <View
             android:id="@+id/divider5"
-            android:layout_width="330dp"
-            android:layout_height="10dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
             android:background="?android:attr/listDivider"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
@@ -188,7 +184,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="TextView"
+            android:text="@string/placeholder_zero"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvTotalItemsLabel"
             app:layout_constraintStart_toStartOf="@+id/tvTotalItemsLabel"
@@ -201,7 +197,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="TextView"
+            android:text="@string/placeholder_zero"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvTotalQuantityLabel"
             app:layout_constraintStart_toStartOf="@+id/tvTotalQuantityLabel"
@@ -212,13 +208,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="Out of Stock"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/tvTotalItemsLabel"
-            app:layout_constraintStart_toStartOf="@+id/tvTotalItemsLabel"
-            app:layout_constraintTop_toBottomOf="@+id/tvTotalItems" />
+            app:layout_constraintEnd_toStartOf="@+id/divider9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider8" />
 
         <TextView
             android:id="@+id/tvOutofStock"
@@ -227,7 +223,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="TextView"
+            android:text="@string/placeholder_zero"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvOutofStockLabel"
             app:layout_constraintStart_toStartOf="@+id/tvOutofStockLabel"
@@ -238,13 +234,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="Low on Stock"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/tvTotalQuantityLabel"
-            app:layout_constraintStart_toStartOf="@+id/tvTotalQuantityLabel"
-            app:layout_constraintTop_toBottomOf="@+id/tvTotalQuantity" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider9"
+            app:layout_constraintTop_toBottomOf="@+id/divider8" />
 
         <TextView
             android:id="@+id/tvLowOnStock"
@@ -253,7 +249,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="TextView"
+            android:text="@string/placeholder_zero"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvLowOnStockLabel"
             app:layout_constraintStart_toStartOf="@+id/tvLowOnStockLabel"
@@ -274,7 +270,7 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="# Orders"
             android:textSize="18sp"
@@ -292,7 +288,65 @@
             app:layout_constraintStart_toStartOf="@+id/tvNumberofOrdersLabel"
             app:layout_constraintTop_toBottomOf="@+id/tvNumberofOrdersLabel" />
 
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1.5dp"
+            android:layout_height="0dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumberOfOrders" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalItems" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5"
+            app:layout_constraintVertical_bias="0.531" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOutofStock" />
+
     </android.support.constraint.ConstraintLayout>
+
+
 
 
 </FrameLayout>

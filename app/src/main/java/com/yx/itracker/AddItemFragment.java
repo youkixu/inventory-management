@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.yx.itracker.Class.Item;
@@ -46,6 +47,8 @@ public class AddItemFragment extends Fragment implements NewItemFragment.OnNewIt
     ViewPager viewPager;
     ViewPageAdapter adapter;
 
+    ScrollView mainScrollView;
+
     public interface OnParentFragInteractionListener {
         void addToItemList(Item itm);
     }
@@ -75,13 +78,6 @@ public class AddItemFragment extends Fragment implements NewItemFragment.OnNewIt
             throw new ClassCastException(context.toString()
                     + " must implement OnParentFragInteractionListener");
         }
-
-        //Log.d("aab", getParentFragment())
-//        if (getParentFragment() instanceof OnParentFragInteractionListener) {
-//            mParentListener = (OnParentFragInteractionListener) getParentFragment();
-//        } else {
-//            throw new RuntimeException("The parent fragment must implement OnChildFragmentInteractionListener");
-//        }
     }
 
     @Override
@@ -109,7 +105,7 @@ public class AddItemFragment extends Fragment implements NewItemFragment.OnNewIt
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_add_item, container, false);
-
+        mainScrollView = view.findViewById(R.id.scrollView);
         Button btnUpload = view.findViewById(R.id.btnUpload);
         btnUpload.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -147,6 +143,8 @@ public class AddItemFragment extends Fragment implements NewItemFragment.OnNewIt
             mItemImages.add(fileUri);
             adapter.notifyDataSetChanged();
             updateImageCount();
+            viewPager.setVisibility(View.VISIBLE); //Unhides the image gallery
+            mainScrollView.fullScroll(ScrollView.FOCUS_UP); //Scrolls to top of page
         }
     }
 
