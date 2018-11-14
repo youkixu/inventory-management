@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
@@ -34,10 +35,7 @@ import java.util.concurrent.TimeUnit;
 
 public class GraphFragment extends Fragment {
     private OnGraphDataInteractionListener mListener;
-    private List<Entry> entries;
     private LineChart chart;
-    private LineDataSet dataSet;
-    private List<Order> mOrderList;
 
     public GraphFragment() { }
 
@@ -47,22 +45,21 @@ public class GraphFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        mOrderList = new ArrayList<Order>();
 
         View view = inflater.inflate(R.layout.fragment_graph, container, false);
         chart = (LineChart) view.findViewById(R.id.chart);
 
         try {
-            entries = new ArrayList<Entry>();
-//
+            List<Entry> entries = new ArrayList<Entry>();
             entries.add(new Entry(0,0));
-//            entries.add(new Entry(2,20));
-//            entries.add(new Entry(3,50));
-//            entries.add(new Entry(4,70));
-//            entries.add(new Entry(5,200));
-//            entries.add(new Entry(7,500));
 
-            dataSet = new LineDataSet(entries, "Label"); // add entries to dataset
+//            long referenceTimestamp = 1541315708;
+//            entries.add(new Entry(0,20));
+//            entries.add(new Entry(77,50));
+//            entries.add(new Entry(150,70));
+
+
+            LineDataSet dataSet = new LineDataSet(entries, "Label"); // add entries to dataset
             dataSet.setLineWidth(2.5f);
             dataSet.setCircleRadius(4.5f);
             dataSet.setColor(Color.rgb(240, 99, 99));
@@ -83,17 +80,7 @@ public class GraphFragment extends Fragment {
             xAxis.setTextColor(Color.rgb(255, 102, 102));
             xAxis.setCenterAxisLabels(true);
             xAxis.setGranularity(1f); // one hour
-            xAxis.setValueFormatter(new IAxisValueFormatter() {
-
-                private final SimpleDateFormat mFormat = new SimpleDateFormat("HH:mm", Locale.ENGLISH);
-
-                @Override
-                public String getFormattedValue(float value, AxisBase axis) {
-
-                    long millis = TimeUnit.HOURS.toMillis((long) value);
-                    return mFormat.format(new Date(millis));
-                }
-            });
+            //xAxis.setValueFormatter(new HourAxisValueFormatter(referenceTimestamp));
 
             YAxis leftAxis = chart.getAxisLeft();
             leftAxis.setPosition(YAxis.YAxisLabelPosition.INSIDE_CHART);
@@ -101,54 +88,49 @@ public class GraphFragment extends Fragment {
             leftAxis.setDrawGridLines(true);
             leftAxis.setGranularityEnabled(true);
             leftAxis.setAxisMinimum(0f);
-            leftAxis.setAxisMaximum(170f);
+            //leftAxis.setAxisMaximum(170f);
             leftAxis.setYOffset(-9f);
             leftAxis.setTextColor(Color.rgb(255, 102, 102));
 
             YAxis rightAxis = chart.getAxisRight();
             rightAxis.setEnabled(false);
 
+            chart.getLegend().setTextColor(Color.WHITE);
+            Description chartDescription = new Description();
+            chartDescription.setText("");
+            chart.setDescription(chartDescription);
             chart.setData(lineData);
             chart.invalidate(); // refresh
 
         } catch (Exception e) {
             Log.d("aa", e.getMessage());
         }
+
         return view;
     }
 
 
-    private void setData(int count, float range) {
-        OrderCalculations oc = new OrderCalculations(mOrderList);
-        HashMap<Float, Float> orderMap = oc.getTimeProfitMap();
+    private void setData(List<Order> orderList) {
+        OrderCalculations oc = new OrderCalculations(orderList);
+        HashMap<Long, Float> orderMap = oc.getTimeProfitMap();
         Log.d("aabb", "OM:"+ orderMap.toString());
-        // now in hours
-        //long now = TimeUnit.MILLISECONDS.toHours(System.currentTimeMillis());
+
+        Map.Entry<Long, Float> entry = orderMap.entrySet().iterator().next();
+        long referenceTimestamp = entry.getKey();
+
+        XAxis xAxis = chart.getXAxis();
+        xAxis.setValueFormatter(new HourAxisValueFormatter(referenceTimestamp));
 
         ArrayList<Entry> values = new ArrayList<>();
 
-
-        for (Map.Entry<Float, Float> entry : orderMap.entrySet()) {
-            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
-            values.add(new Entry(entry.getKey(), entry.getValue()));
+        for (Map.Entry<Long, Float> mapEntry : orderMap.entrySet()) {
+            System.out.println("Key = " + mapEntry.getKey() + ", Value = " + mapEntry.getValue());
+            long xNew = mapEntry.getKey() - referenceTimestamp;
+            values.add(new Entry(xNew, mapEntry.getValue()));
         }
 
-//        values.add(new Entry(428025, 50));
-//        values.add(new Entry(428026, 60));
-//        values.add(new Entry(428027, 70));
-
-        // count = hours
-        //float to = now + count;
-
-        // increment by 1 hour
-//        for (float x = now; x < to; x++) {
-//            float y = getRandom(range, 50);
-//            Log.d("aabb", "x:" + Float.toString(x) + "y:" + Float.toString(y));
-//            values.add(new Entry(x, (float)yVals)); // add one entry per hour
-//        }
-
         // create a dataset and give it a type
-        LineDataSet set1 = new LineDataSet(values, "DataSet 1!");
+        LineDataSet set1 = new LineDataSet(values, "Today's Profit");
         set1.setAxisDependency(YAxis.AxisDependency.LEFT);
         set1.setColor(ColorTemplate.getHoloBlue());
         set1.setValueTextColor(ColorTemplate.getHoloBlue());
@@ -174,11 +156,7 @@ public class GraphFragment extends Fragment {
     }
 
     public void updateGraphData(List<Order> orderList) {
-        mOrderList = orderList;
-
-        setData(5, 50);
-//        entries.add(new Entry(8,1000));
-//        dataSet.setValues(entries);
+        setData(orderList);
         chart.getData().notifyDataChanged();
         chart.notifyDataSetChanged();
         chart.invalidate(); // refresh

@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class AlertDialogFragment extends DialogFragment {
-
+    String title;
     String message;
     public AlertDialogFragment() {
         // Required empty public constructor
@@ -23,7 +23,9 @@ public class AlertDialogFragment extends DialogFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+            title = getArguments().getString("title");
             message = getArguments().getString("msg");
+
         }
     }
 
@@ -38,7 +40,7 @@ public class AlertDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Error Adding Order");
+        builder.setTitle(title);
         builder.setMessage(message);
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {

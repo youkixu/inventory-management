@@ -150,6 +150,7 @@ public class AddOrderFragment extends Fragment {
 
         DialogFragment dialog = new AlertDialogFragment();
         Bundle b = new Bundle();
+        b.putString("title", "Error Adding Order");
         b.putString("msg", msg.toString());
         dialog.setArguments(b);
         dialog.show(getActivity().getSupportFragmentManager(), "fragmentAlertDialog");

@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity implements NewItemFragment.O
         ItemListFragment.OnChangeFragListener,
         OrderListFragment.OnFragmentInteractionListener,
         AddOrderFragment.OnOrderActivityListener,
-        GraphFragment.OnGraphDataInteractionListener
+        GraphFragment.OnGraphDataInteractionListener,
+        OptionsFragment.OnOptionsInteractionListener
 {
 //https://stackoverflow.com/questions/39491655/communication-between-nested-fragments-in-android
 ///https://github.com/wasabeef/awesome-android-ui
@@ -115,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements NewItemFragment.O
         //Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         //setSupportActionBar(myToolbar);
 
-        fm.beginTransaction().add(R.id.container,fragmentHome, "fragmentHome").addToBackStack(null).commit();
+        fm.beginTransaction().add(R.id.container, fragmentHome, "fragmentHome").addToBackStack(null).commit();
         fm.beginTransaction().add(R.id.container, fragmentItemList, "fragmentItemList").addToBackStack(null).hide(fragmentItemList).commit();
         fm.beginTransaction().add(R.id.container, fragmentOrderList, "fragmentOrderList").addToBackStack(null).hide(fragmentOrderList).commit();
         fm.beginTransaction().add(R.id.container, fragmentGraph, "fragmentGraph").addToBackStack(null).hide(fragmentGraph).commit();

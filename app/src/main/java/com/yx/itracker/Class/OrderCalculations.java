@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -48,16 +49,6 @@ public class OrderCalculations {
         return sum.doubleValue();
     }
 
-//    public double getBuyValue() {
-//        BigDecimal sum = new BigDecimal(0);
-//        sum.setScale(2, RoundingMode.CEILING);
-//        for(Order order : orders) {
-//            BigDecimal qty = new BigDecimal(itm.getQuantity());
-//            sum = sum.add(itm.getBuyPrice().multiply(qty));
-//        }
-//        return sum.doubleValue();
-//    }
-
     public double getProfitValue() {
         BigDecimal sum = new BigDecimal(0);
         sum.setScale(2, RoundingMode.CEILING);
@@ -69,28 +60,17 @@ public class OrderCalculations {
         return sum.doubleValue();
     }
 
-    public HashMap<Float, Float> getTimeProfitMap() {
-        HashMap<Float, Float> map = new HashMap<>();
+    public HashMap<Long, Float> getTimeProfitMap() {
+        HashMap<Long, Float> map = new LinkedHashMap<>(); //Hashmap that is ordered
 
         BigDecimal sum = new BigDecimal(0).setScale(2, RoundingMode.CEILING);
         for(Order order : orders) {
             BigDecimal cost = order.getPrice().subtract(order.getItem().getBuyPrice());
             BigDecimal profit = cost.multiply(new BigDecimal(order.getQuantity()));
             sum = sum.add(profit);
-            long timeAdded = TimeUnit.MILLISECONDS.toHours(order.getDateAdded().getTime());
-            map.put(((float) timeAdded), sum.floatValue());
+            long unixTsTimeAdded = order.getDateAdded().getTime() / 1000;
+            map.put((unixTsTimeAdded), sum.floatValue());
         }
         return map;
     }
 }
-
-//getSellValue
-//        BigDecimal sum = new BigDecimal(0);
-//        sum.setScale(2, RoundingMode.CEILING);
-//        BigDecimal result;
-//        for(Order order : orders) {
-//            BigDecimal qty = new BigDecimal(order.getQuantity());
-//            sum = sum.add(order.getSellPrice().multiply(qty));
-//            Log.d("aa", "GetSellVal:" + Integer.toString(sum.intValue()));
-//        }
-//return sum.doubleValue();
